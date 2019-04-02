@@ -1,0 +1,278 @@
+body {
+  text-align: center;
+  background-color:#e5c892;
+}
+.merriweather {
+  font-family: 'Merriweather', serif;
+}
+.sansserif {
+  font-family: sans-serif;
+}
+#initials {
+  display:inline-block;
+  text-align:left;
+  position:fixed;
+  left:2%;
+  top:2%;
+  font-family: 'Dancing Script', cursive;
+  color:#e5c892;
+  height:auto;
+  border-radius:50%;
+  width:auto;
+  font-size:30pt;
+  margin:0;
+  margin-right:5px;
+}
+#initials:hover {
+  cursor: default;
+}
+nav {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:10%;
+  background-color:#632d3a;
+  z-index: 3;
+}
+#navLinks {
+  position:fixed;
+  right: 2%;
+  display:inline-block;
+  text-align: right;
+  list-style-type: none;
+  margin-right:0;
+  padding:0;
+}
+li {
+  display:inline;
+  font-size:15pt;
+  padding-left:5px;
+  padding-right:5px;
+  background-color:#e5c892;
+  border-radius:5px;
+}
+a {
+  color:black;
+  text-decoration: none;
+  background-color:#e5c892;
+}
+li:hover {
+  animation: bounce 0.5s;
+}
+@keyframes bounce {
+  0% {
+      font-size:15pt;
+    }
+  50% {
+      font-size:17pt;
+    }
+  100% {
+      font-size:15pt;
+    }
+}
+#banner {
+  width:100%;
+  height:auto;
+  background-image:url("images/bee-n-flowers-banner.jpg");
+  background-position: center;
+  background-color:lightgrey;
+
+  padding:20% 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px;
+}
+#slogan {
+  position: absolute;
+  margin-left:auto;
+  margin-right:auto;
+  left:0;
+  right:0;
+}
+#slogan:hover {
+  cursor:default;
+}
+.sloganLetter {
+  font-size:50px;
+  font-family: 'Laila', serif;
+  animation: bounceSlogan 3s infinite;
+  display:inline;
+}
+#always {
+  animation-delay: 0s;
+}
+#be {
+  animation-delay:0.3s;
+}
+#coding {
+  animation-delay: 0.6s;
+}
+@keyframes bounceSlogan {
+  0% {
+    font-size:40px;
+  }
+  50% {
+    font-size:42px;
+  }
+  100% {
+    font-size:40px;
+  }
+}
+#bio {
+  display:inline-block;
+  width:50%;
+  height:auto;
+  text-align:left;
+}
+#imageMe {
+  vertical-align: top;
+  display:inline-block;
+  background-color:lightgray;
+  height:auto;
+}
+#skills {
+  background-color: #e8793e;
+  width:80%;
+  margin:auto;
+  padding-top: 50px;
+  height:auto;
+  border-radius: 25px;
+}
+#skills-header {
+  margin:auto;
+  padding-top:2%;
+}
+#skills-table {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width:auto;
+  justify-content: center;
+}
+.skillThumb {
+  width:100px;
+  height: 100px;
+}
+.uniqueSkill {
+  vertical-align: bottom;
+  margin:2%;
+  background-color:#eabc8a;
+  border-radius:25px;
+}
+article {
+  width: 80%;
+  height: auto;
+  text-align:left;
+  border: 1px solid black;
+  margin:auto;
+  padding:0;
+  margin-bottom: 2%;
+}
+.thumbnail {
+  max-width:100%;
+  max-height: 100%;
+  /* display:inline-block;*/
+  vertical-align: top;
+  opacity: 1.0;
+}
+.imageHolder {
+  background-color:black;
+  max-width:20%;
+  margin-right:2%;
+  padding:0;
+  display:inline-block;
+}
+.project-contents {
+    display:inline-block;
+    width:70%;
+    height:auto;
+    vertical-align: top;
+    margin:0;
+}
+a:link {
+  color: maroon;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: maroon;
+}
+a:hover {
+  color: hotpink;
+}
+.thumbnail:hover {
+  opacity: 0.5;
+  background-color:black;
+}
+footer {
+  background-color:#632d3a;
+  padding:2%;
+  color:#eabc8a;
+}
+#findMeAt img {
+  width: 60px;
+  height: 60px;
+  margin:5%;
+}
+@media only screen and (max-width:350px) {
+  #navLinks {
+    padding:0;
+    text-align:center;
+  }
+}
+@media only screen and (max-width:420px) {
+  #initials {
+    position: relative;
+    margin-right:5px;
+  }
+  #navLinks {
+    position: relative;
+  }
+  nav {
+    height:auto;
+  }
+  .sloganLetter {
+    font-size:20px;
+    font-family: 'Laila', serif;
+    animation: bounceSlogan 2s infinite;
+    display:inline;
+  }
+  #always {
+    animation-delay: 0s;
+    }
+  #be {
+    animation-delay:0.2s;
+  }
+  #coding {
+    animation-delay: 0.4s;
+  }
+  @keyframes bounceSlogan {
+    0% {
+      font-size:20px;
+    }
+    50% {
+      font-size:22px;
+    }
+    100% {
+      font-size:20px;
+    }
+  }
+}
+@media only screen and (max-width:620px) {
+  #submit-button {
+    width:50%;
+  }
+}
+@media only screen and (max-width:830px) {
+  .project-contents {
+    width:100%;
+  }
+  article {
+    text-align: center;
+  }
+  .imageHolder {
+    max-width:30%;
+  }
+}

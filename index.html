@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        <script type = "module" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <meta name="description" content="my Portfolio">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <h1 id="initials">LR7</h1>
+      <ul id = "navLinks" class = "merriweather">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header role = "banner" id="banner">
+      <div id="slogan">
+        <h2 class="merriweather sloganLetter" id="always">Always </h2>
+        <h2 class="merriweather sloganLetter" id="be"> be </h2>
+        <h2 class="merriweather sloganLetter" id="coding"> coding </h2>
+      </div>
+    </header>    
+    <section role = "about-me" id = "about">
+      <h1 class = "merriweather">About Me</h1>
+      <figure id = "imageMe">
+        <img class = "headShot" src = "images/head-shot.jpg" alt = "Head shot.">
+      </figure>
+      <h2>Louis R. Seven</h2>
+      <h4>Full-stack JavaScript Developer</h4>
+      <p id="bio" class="sansserif">Hello ;-)  I am Louis. I am a student of Thinkful’s full-stack flex web development boot-camp. My favorite aspect of coding is the satisfaction at the end of a project. It gives me the same feeling from my childhood, solving puzzles. Nothing is better than leaning back and looking at what you have created, and how it would affect others’ lives positively.<br /><br>
+
+      When I’m not coding, I enjoy several hobbies that involve art and creating. I am an avid Latin dancer, meal prepper, kombucha brewer and photography enthusiast.<br /><br>
+
+      I currently live in NYC metro area and I am looking for an entry level position in web development.</p>
+    </section>
+    <section role = "skills" id = "skills">
+      <h1 class = "merriweather" id="skills-header">Skills</h1>
+      <div id = "skills-table" class="sansserif">
+        <container class = "uniqueSkill">
+          <img class = "skillThumb" src="images/thumbnails/html5.png" alt = "HTML5 logo">
+          <p>HTML5</p>
+        </container>
+        <container class = "uniqueSkill">
+          <img class = "skillThumb" src="images/thumbnails/css3.png" alt = "CSS3 logo">
+          <p>CSS 3</p>
+        </container>
+        <container class = "uniqueSkill">
+          <img class = "skillThumb" src="images/thumbnails/javascript.png" alt = "Javascript log">
+          <p>JavaScript</p>
+        </container>
+        <container class = "uniqueSkill">
+          <img class = "skillThumb" src="images/thumbnails/jQuery.png" alt = "jQuery logo">
+          <p>jQuery</p>
+        </container>
+        <container class = "uniqueSkill">
+          <img class = "skillThumb" src="images/thumbnails/git.png" alt = "Git logo">
+          <p>Git</p>
+        </container>
+        <container class = "uniqueSkill">
+          <img class = "skillThumb" src="images/thumbnails/github.png" alt = "Github logo">
+          <p>Github</p>
+        </container> 
+      </div>
+    </section>
+    <section role = "projects" id="projects">
+      <h1 class="merriweather">Projects</h1>
+      <article class="sansserif">
+        <div class="imageHolder">
+          <img class = "thumbnail" src = "images/quiz-app-screenshot.png" alt="photo of trivia quiz app">
+        </div>
+        <div class = "project-contents">
+          <h2>Trivia Quiz App</h2>
+          <p>A project made for the Thinkful boot-camp. It is a quiz of ten random trivia questions. Made using HTML, CSS, Javascript and jQuery.</p>
+          <a class="links" href="https://louisdseven.github.io/quiz-app/" target="_blank">Live Page</a>
+          <a class="links" href="https://github.com/louisdseven/quiz-app" target="_blank">Repository</a>
+        </div>
+      </article>
+    </section>
+    <section role = "contact" id="contact">
+      <h1 class="merriweather">Contact Me</h1>
+      <div id="findMeAt">
+        <a href="https://github.com/louisdseven" target="_blank">
+          <img src="images/thumbnails/github.png" alt="My Github">
+        </a>
+        <a href="https://www.linkedin.com/in/louis-r-seven/" target="_blank">
+          <img src="images/thumbnails/linkedin.png" alt="My Linkedin">
+        </a>
+        <a href="mailto:louisdseven@yahoo.com" target="_blank">
+          <img src="images/thumbnails/mail2.png" alt="Mail icon" class="icon">
+        </a>
+      </div>
+    </section>
+    <footer class="merriweather">
+      2019 Louis R. Seven
+    </footer>
+  </body>
+</html>
